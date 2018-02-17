@@ -1,26 +1,7 @@
-.header {
-  background-image: url(../img/banner-large.jpg);
-  background-size: cover;
-
-  width: 100%;
-  height: 800px;
-
-  @include mobile {
-    background-image: url(../img/banner-small.jpg);
-    background-size: cover;
-    height: 480px;
-  }
-
-  @include tablet {
-    background-image: url(../img/banner-medium.jpg);
-    background-size: cover;
-    height: 520px;
-  }
-}
-
 .menu {
   position: fixed;
   top: 0;
+  z-index: 999;
 
   width: 100%;
   height: 90px;
@@ -111,7 +92,7 @@ input[type="search"] {
   outline: none;
   width: 100px;
   border: solid 1px $black;
-  border-radius: 10px;
+  border-radius: 5px;
   background-color: $black;
   color: $white;
   font: $small $basic;
@@ -126,6 +107,12 @@ input[type="search"] {
   width: 1.000em;
   height: 1.000em;
   padding: 0 0.250em;
+}
+
+.menu__icon--hover {
+    &:hover path {
+    fill: $darkBlue;
+  }
 }
 
 hr {
@@ -162,15 +149,15 @@ hr {
 
 .menu__logo--txt {
   text-transform: uppercase;
-  font-weight: 700;
+  font-weight: 600;
   color: $white;
-  font: $large $basic;
+  font: $large $bold;
   line-height: 60%;
 }
 
 .menu__logo--color {
   color: $darkBlue;
-  font-weight: 700;
+  font-weight: 600;
 }
 
 .menu__logo--subtitle {
