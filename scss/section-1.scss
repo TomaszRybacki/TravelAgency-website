@@ -1,0 +1,101 @@
+.tour {
+  width: 100%;
+  height: 700px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-image: url(../img/section-bg-large.jpg);
+  background-size: cover;
+
+  @include mobile {
+    height: auto;
+  }
+
+  @include tablet {
+    height: auto;
+  }
+}
+
+.tour__wrapper {
+  max-width: 1100px;
+  margin: 0 auto;
+
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.tour__wrapper > h3 {
+  flex: 1 1 100%;
+  font: $xlarge $bold;
+  font-weight: 600;
+  text-align: center;
+  text-transform: uppercase;
+  padding: 20px;
+}
+
+.tour__wrapper > p {
+  flex: 1 1 100%;
+  font: $medium $basic;
+  text-align: center;
+  padding: 20px;
+}
+
+.tour__gallery {
+  flex: 1 1 25%;
+  min-width: 240px;
+  min-height: 200px;
+  position: relative;
+  margin: 20px 0;
+  display: flex;
+  justify-content: center;
+
+  @include mobile {
+    flex: 1 1 100%;
+  }
+
+  @include tablet {
+    min-width: 200px;
+  }
+}
+
+.gallery__mask {
+  background-color: rgba(0, 0, 0, 0.5);
+  width: 200px;
+  height: 200px;
+  position: relative;
+  top: 0;
+  z-index: 10;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+
+  &:hover {
+    background-color: rgba(0, 0, 0, 0);
+    transition: all 0.3s;
+
+    .gallery__label {
+      display: none;
+    }
+  }
+}
+
+.gallery__img {
+  border-radius: 50%;
+  width: 200px;
+
+  position: absolute;
+  top: 0;
+  z-index: 5;
+}
+
+.gallery__label {
+  font: $medium $bold;
+  font-weight: 600;
+  text-transform: uppercase;
+  text-align: center;
+  color: $white;
+  padding: 20px;
+}
