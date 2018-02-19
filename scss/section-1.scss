@@ -9,10 +9,14 @@
 
   @include mobile {
     height: auto;
+    background-image: url(../img/section-bg-medium.jpg);
+    background-size: cover;
   }
 
   @include tablet {
     height: auto;
+    background-image: url(../img/section-bg-medium.jpg);
+    background-size: cover;
   }
 }
 

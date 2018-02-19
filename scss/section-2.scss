@@ -1,0 +1,124 @@
+.deals{
+  width: 100%;
+  height: auto;
+  padding-bottom: 40px;
+  background-image: url(../img/deal-bg-large.jpg);
+  background-size: cover;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  @include mobile {
+    height: auto;
+    background-image: url(../img/deal-bg-medium.jpg);
+    background-size: cover;
+  }
+
+  @include tablet {
+    height: auto;
+    background-image: url(../img/deal-bg-medium.jpg);
+    background-size: cover;
+  }
+}
+
+.deals__wrapper {
+  margin: 0 auto;
+  max-width: 1100px;
+
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+
+  h3 {
+    flex: 1 1 100%;
+    font: $xlarge $bold;
+    font-weight: 600;
+    color: $white;
+    text-align: center;
+    padding: 30px;
+    text-transform: uppercase;
+  }
+}
+
+
+.deals__box {
+  flex: 0 1 28%;
+  min-width: 280px;
+  margin: 10px;
+  background-color: $white;
+
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.deals__img {
+  width: 100%;
+}
+
+.box__price {
+  width: 120px;
+  height: 50px;
+  background-color: $lightBlue;
+
+  position: relative;
+  top: -25px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.price {
+  font: $large $bold;
+  font-weight: 600;
+  color: $white;
+  margin: 5px;
+}
+
+.price--modified {
+  font: $medium $bold;
+  font-weight: 600;
+  color: $white;
+  text-decoration: line-through;
+  margin: 5px;
+}
+
+.box__title {
+  flex: 1 1 100%;
+  font: $xlarge $bold;
+  font-weight: 600;
+  color: $black;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.box__txt {
+  flex: 1 1 100%;
+  font: $small $basic;
+  color: $black;
+  padding: 10px 20px;
+}
+
+.box__button {
+  font: $medium $bold;
+  font-weight: 600;
+  background-color: $darkBlue;
+  border: solid 2px $darkBlue;
+  color: $white;
+  text-transform: uppercase;
+
+  width: 150px;
+  height: 40px;
+  margin: 20px;
+
+  &:hover {
+    cursor: pointer;
+    background-color: $white;
+    color: $darkBlue;
+    border: solid 2px $darkBlue;
+    transition: 0.3s all;
+  }
+}
