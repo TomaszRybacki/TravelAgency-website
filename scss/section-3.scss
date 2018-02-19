@@ -1,0 +1,93 @@
+.gallery {
+  background-color: $white;
+  width: 100%;
+  margin-bottom: 40px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+
+  h3 {
+    flex: 1 1 100%;
+    text-transform: uppercase;
+    font: $xlarge $bold;
+    font-weight: 600;
+    color: $black;
+    text-align: center;
+    margin: 50px 20px;
+  }
+}
+
+.gallery__box {
+  flex: 1 1 32%;
+  margin: 1px;
+  position: relative;
+  min-width: 300px;
+
+  img {
+    width: 100%;
+  }
+}
+
+.gallery__mask2 {
+  position: absolute;
+  top: 0;
+
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.7);
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+
+  &:hover {
+    background-color: rgba(0, 0, 0, 0);
+    transition: all 0.3s;
+
+    .box__label {
+      visibility: hidden;
+    }
+    .box__city {
+      visibility: hidden;
+    }
+  }
+}
+
+.box__label {
+  text-align: center;
+  font: $large $bold;
+  font-weight: 600;
+  text-transform: uppercase;
+  color: $white;
+  padding: 10px;
+}
+
+.box__city {
+  text-align: center;
+  font: $small $basic;
+  color: $white;
+  padding: 10px;
+}
+
+.box__know-button {
+  font: $small $bold;
+  font-weight: 600;
+  background-color: $darkBlue;
+  border: solid 2px $darkBlue;
+  color: $white;
+  text-transform: uppercase;
+  margin: 20px;
+  border-radius: 4px;
+
+  width: 120px;
+  height: 40px;
+
+  &:hover {
+    cursor: pointer;
+    transform: translateY(-10px);
+    transition: 0.3s all;
+  }
+}
