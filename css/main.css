@@ -1046,3 +1046,159 @@ input[type="text"] {
       transition: all 0.3s; }
 
 /* FOOTER ************************************************************************ */
+.footer {
+  margin-top: 20px;
+  background-color: white; }
+
+.footer__wrapper {
+  max-width: 1100px;
+  margin: 0 auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: start;
+  -ms-flex-align: start;
+  align-items: flex-start;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap; }
+
+.footer__box {
+  -webkit-box-flex: 1;
+  -ms-flex: 1 1 20%;
+  flex: 1 1 20%;
+  padding: 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap; }
+  @media only screen and (max-width: 420px) {
+    .footer__box {
+      -webkit-box-flex: 1;
+      -ms-flex: 1 1 100%;
+      flex: 1 1 100%;
+      padding: 10px 20px; } }
+  @media only screen and (min-width: 421px) and (max-width: 780px) {
+    .footer__box {
+      -webkit-box-flex: 1;
+      -ms-flex: 1 1 30%;
+      flex: 1 1 30%;
+      padding: 10px 20px; } }
+  .footer__box h4 {
+    -webkit-box-flex: 1;
+    -ms-flex: 1 1 100%;
+    flex: 1 1 100%;
+    font: 1.5em "Oswald", sans-serif;
+    font-weight: 600;
+    color: black;
+    padding: 20px 0;
+    text-transform: uppercase; }
+  .footer__box li {
+    font: 0.875em "Open Sans", sans-serif;
+    color: black;
+    padding: 5px 0; }
+  .footer__box a:hover {
+    color: #479fff; }
+  .footer__box button {
+    -webkit-box-flex: 1;
+    -ms-flex: 1 1 30%;
+    flex: 1 1 30%;
+    background-color: #006fe5;
+    height: 40px;
+    color: white;
+    text-transform: uppercase;
+    font: 0.875em "Oswald", sans-serif;
+    font-weight: 600;
+    border: solid 2px #006fe5; }
+    .footer__box button:hover {
+      cursor: pointer;
+      background-color: white;
+      color: #006fe5;
+      border: solid 2px #006fe5;
+      -webkit-transition: 0.3s all;
+      -o-transition: 0.3s all;
+      transition: 0.3s all; }
+  .footer__box input {
+    -webkit-box-flex: 1;
+    -ms-flex: 1 1 50%;
+    flex: 1 1 50%;
+    height: 16px;
+    width: 10%;
+    outline: none;
+    padding: 10px;
+    border: solid 2px lightgray;
+    font: 0.875em "Open Sans", sans-serif;
+    color: black;
+    background-color: lightgray; }
+    .footer__box input:focus {
+      border: solid 2px #006fe5; }
+
+.footer__box-logo {
+  width: 40px;
+  padding: 5px; }
+  .footer__box-logo:hover {
+    -webkit-transform: rotate(360deg);
+    -ms-transform: rotate(360deg);
+    transform: rotate(360deg);
+    -webkit-transition: all 0.3s;
+    -o-transition: all 0.3s;
+    transition: all 0.3s; }
+
+.credits {
+  border-top: solid 1px lightgray;
+  margin: 30px 0 20px 0;
+  padding-top: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap; }
+
+.credits__left {
+  -webkit-box-flex: 1;
+  -ms-flex: 1 1 50%;
+  flex: 1 1 50%;
+  text-align: left;
+  font: 0.875em "Open Sans", sans-serif;
+  color: black; }
+  @media only screen and (max-width: 420px) {
+    .credits__left {
+      -webkit-box-flex: 1;
+      -ms-flex: 1 1 100%;
+      flex: 1 1 100%;
+      text-align: center; } }
+  @media only screen and (min-width: 421px) and (max-width: 780px) {
+    .credits__left {
+      -webkit-box-flex: 1;
+      -ms-flex: 1 1 100%;
+      flex: 1 1 100%;
+      text-align: center; } }
+
+.credits__right {
+  -webkit-box-flex: 1;
+  -ms-flex: 1 1 50%;
+  flex: 1 1 50%;
+  text-align: right;
+  font: 0.875em "Open Sans", sans-serif;
+  color: black; }
+  @media only screen and (max-width: 420px) {
+    .credits__right {
+      -webkit-box-flex: 1;
+      -ms-flex: 1 1 100%;
+      flex: 1 1 100%;
+      text-align: center; } }
+  @media only screen and (min-width: 421px) and (max-width: 780px) {
+    .credits__right {
+      -webkit-box-flex: 1;
+      -ms-flex: 1 1 100%;
+      flex: 1 1 100%;
+      text-align: center; } }
