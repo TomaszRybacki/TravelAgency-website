@@ -45,7 +45,7 @@
   }
 
   a {
-    &:hover {
+    &:hover, &:focus {
       color: $lightBlue;
     }
   }
@@ -60,7 +60,7 @@
     font-weight: 600;
     border: solid 2px $darkBlue;
 
-    &:hover {
+    &:hover, &:focus {
       cursor: pointer;
       background-color: $white;
       color: $darkBlue;
@@ -96,6 +96,13 @@
   }
 }
 
+.footer__box-logo--focus {
+  &:focus {
+    transform: rotate(360deg);
+    transition: all 0.3s;
+  }
+}
+
 .credits {
   border-top: solid 1px lightgray;
   margin: 30px 0 20px 0;
@@ -120,6 +127,10 @@
   @include tablet {
     flex: 1 1 100%;
     text-align: center;
+  }
+
+  a:focus, a:hover {
+    color: $lightBlue;
   }
 }
 

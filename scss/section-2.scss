@@ -115,7 +115,7 @@
   height: 40px;
   margin: 20px;
 
-  &:hover {
+  &:hover, &:focus {
     cursor: pointer;
     background-color: $white;
     color: $darkBlue;

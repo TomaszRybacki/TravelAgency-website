@@ -75,7 +75,8 @@
       font-size: $small;
     }
 
-    &:hover {
+    &:hover, &:focus {
+      outline: none;
       cursor: pointer;
       transform: rotate(360deg);
       transition: all 0.3s;

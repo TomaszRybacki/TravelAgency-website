@@ -165,12 +165,13 @@
   border-radius: 5px;
   font-weight: 600;
 
-  &:hover {
+  &:hover, &:focus {
     background-color: $white;
     color: $darkBlue;
     transition: all 0.3s;
     cursor: pointer;
   }
+
 }
 
 input[type="text"] {
