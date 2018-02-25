@@ -9,6 +9,7 @@
 
   @include mobile {
     height: 90px;
+    background-color: $black;
   }
 
   @include tablet {
@@ -138,7 +139,7 @@ hr {
 
   @include mobile {
     flex: 1 1 100%;
-    justify-content: center;
+    justify-content: space-around;
   }
 
   @include tablet {
@@ -176,9 +177,13 @@ hr {
   display: flex;
   align-items: center;
   justify-content: flex-end;
+  flex-wrap: wrap;
 
   @include mobile {
+    margin-top: -6px;
     display: none;
+    position: relative;
+    top: 0;
   }
 
   @include tablet {
@@ -199,6 +204,14 @@ hr {
     @include tablet {
       padding: 5px;
     }
+
+    @include mobile {
+      flex: 1 1 100%;
+      background-color: $black;
+      margin: 0;
+      padding: 10px;
+      box-sizing: border-box;
+    }
   }
 }
 
@@ -206,4 +219,13 @@ hr {
     &:focus {
       color: $darkBlue;
     }
+}
+
+.scale-it {
+  animation: scale 0.3s ease-in-out;
+}
+
+@keyframes scale {
+  0% {transform: scale(0)}
+  100% {transform: scale(1)}
 }
